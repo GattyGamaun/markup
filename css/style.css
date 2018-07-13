@@ -1,0 +1,617 @@
+@font-face {
+    font-family: "open-sans-bold";
+    src: url('../assets/fonts/open-sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "open-sans-italic";
+    src: url('../assets/fonts/open-sans/OpenSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: "open-sans-regular";
+    src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "open-sans-light";
+    src: url('../assets/fonts/open-sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: "YesevaOne";
+    src: url('../assets/fonts/yeseva-one/YesevaOne-Regular_v2.otf'); 
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Gentium-R";
+    src: url('../assets/fonts/Gentium-Basic/GenBkBasR.ttff'); 
+}
+
+@font-face {
+    font-family: "Gentium";
+    src: url('../assets/fonts/Gentium-Basic/GenBasB.ttf');
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url('../assets/fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Lato-light";
+    src: url('../assets/fonts/lato/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    src: url('../assets/fonts/lato/Lato-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1600px;
+    height: 159px;
+    position: absolute; 
+    top: 0; 
+    background-image: url('../assets/images/header-background.png');
+}
+nav {
+    display: inline-block;
+    height: 60px;
+    max-height: 100%;    
+}
+
+ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Gentium";
+    font-size: 21px;
+    color: #f7f6f1;
+    font-weight: 100;
+    
+}
+
+li {
+    display: inline-block;
+    padding-top: 50px;
+    margin-right: 48px;
+    border-top: 3px solid;
+}
+
+li:hover{
+    border-top: 3px solid #ffffff;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 47px 238px 47px 179px;
+    font-family: "YesevaOne";
+    color: #ececec;
+    font-size: 36px;
+    content: url('../assets/images/logo-background.png');
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+h2, h3, h4, p {
+    text-align: center;
+}
+
+h2 {
+    font-family: "YesevaOne";
+    color: #f7f6f1;
+    font-size: 90px;
+    text-shadow: -1px 1px black;
+    margin: 214px auto 25px auto;
+    width: 70%;
+    line-height: 1.3;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: "YesevaOne";
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+}
+h4 {
+    font-family: "YesevaOne";
+    font-size: 21px;
+    margin: 0px auto 16px auto;
+}
+
+article p {
+    font-family: "Gentium";
+    color: #dde0df;
+    font-size: 30px;
+    letter-spacing: normal;
+}
+
+footer{
+    width: 1600px;
+    height: 320px;
+    background: rgb(25, 25, 25);
+    margin: 0 auto;
+    color: white;
+    
+}
+
+footer section {
+    width: 353px;
+    height: 224px;
+    display: inline-block;
+    position: relative;
+    top: 57px;
+    left: 224px;
+    margin-right: 44px;
+    overflow: hidden;
+    
+}
+
+footer section p {
+    margin: 16px auto 50px auto;
+    font-family: "lato-light";
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+footer img {
+    height: 20px;
+}
+
+footer div + img{
+    height: 15px;
+}
+span {
+    font-family: "lato-bold";
+    font-size: 16px;
+    display: inline;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+button {
+    height: 54px;
+    width: 226px;
+    box-sizing: initial;
+    border: 1px solid black;
+    margin: 33px 15px;
+    font-family: "Lato";
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+/* .schedule p span {
+    font-weight: bold;
+} */
+
+/* span {
+    width: 40px;
+    height: 50px;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 96px;
+    color: #f2f4f4;
+    position: relative;
+    left: 50px;
+} */
+.wrapper {
+    position: relative;
+    width: 1600px;
+    background-color: #ececec;
+    background-image: url('../assets/images/background.png');
+    min-height: calc(100vh - 350px);
+    margin: 0 auto;
+    user-select: none;
+    cursor: default;
+    font-size: 0;
+}
+
+.social-icons {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: -14px;
+}
+
+.social-icons a{
+    display: inline-block;
+    background-image: url('../assets/images/social-icons.png');
+    background-repeat: no-repeat;
+    /* height: 22px; */
+    
+}
+
+.twitter {
+    height: 22px;
+    width: 28px;
+    background-position-x: 0;
+}
+
+.youtube {
+    height: 22px;
+    width: 32px;
+    background-position-x: -30px;
+}
+
+.facebook {
+    height: 22px;
+    width: 32px;
+    background-position-x: -62px;
+}
+
+.buttons{
+    margin: 0 auto;
+    position: relative;
+    left: 539px;
+    display: inline-block;
+}
+
+.buttons button + button{
+    border: 1px solid white;
+    background-color: rgba(221, 224, 223, 0.2);
+}
+.home {
+    height: 750px;
+    background-color: darkslategray;
+    box-sizing: border-box;
+    padding: 1px;
+    background-image: url("../assets/images/home.png");
+}
+
+.about {
+    height: 710px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.about article h3{
+    color:#cc9900;
+    margin: 20px auto 14px auto;
+}
+
+.about article p {
+    margin: 26px auto 41px auto;
+    font-family: "Lato";
+    color: rgb(88, 88, 88);
+    font-size: 16px;
+    line-height: 1.5;
+    height: 130px;
+    overflow: hidden;
+    letter-spacing: 0em;
+}
+
+.about-right {
+    display: inline-block;
+    position: relative;
+    left: 309px;
+    top: 53px;
+}
+
+.about-left {
+    display: inline-block;
+    position: relative;
+    width: 430px;
+    height: 710px;
+    left: 285px;
+    top: -27px;
+}
+
+.about-left div {
+    display: inline-block;
+    position: relative;
+    left: 139px;
+}
+
+.ingredients {
+    height: 758px;
+    background-image: url("../assets/images/ingredients.png");
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ingredients article {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 570px;
+    height: 557px;
+    position: relative;
+    top: 91px;
+    left: 805px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.ingredients article h3{
+    margin: 75px auto 15px auto;
+}
+
+.ingredients article p {
+    margin: 26px 80px 56px 80px;
+    font-family: "Lato-light";
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 130px;
+    overflow: hidden;
+}
+
+.ingredients article div {
+    position: relative;
+    display: inline-block;
+    width: 570px;
+    left: 89px;
+}
+
+.ingredients article div img {
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+    
+    height: 994px;
+    background-color: white;
+    background-image: url("../assets/images/pattern.png");
+    box-sizing: border-box;
+    color:#cc9900;
+}
+
+.menu-wrapper {
+    display: inline-block;
+    width: 1054px;
+    max-height: 994px;
+    position: relative;
+    top: 70px;
+    left: 272px;
+}
+
+.menu-left {
+    width: 453px;
+    float: left;
+}
+
+.menu-right {
+    width: 453px;
+    float: right;
+}
+
+.menu-wrapper article{
+    display: inline-block;
+    position: relative;
+    width: 453px;
+}
+
+.menu-wrapper article h3{
+    color:#cc9900;
+    margin-bottom: 13px;
+    margin-top: 28px;
+}
+
+.menu-wrapper img {
+    margin-bottom: 30px;
+}
+
+.menu-wrapper p {
+    font-family: "Lato";
+    font-size: 16px;
+    overflow: hidden;
+    color: rgb(88, 88, 88);
+    text-align: left;
+    padding: 12px 1px 36px 10px;
+    display: inline-block;
+}
+
+.item {
+    padding: 5px 14px 7px 12px;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.item span {
+    float: left;
+    width: 300px;
+    font-family: "YesevaOne";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+}
+
+.item span + span {
+    float: right;
+    width: 50px;
+}
+
+.line {
+    border-top: 1px solid #e4dbbb;
+    width: 430px;
+    margin: 0 auto;
+}
+
+
+.special-mark {
+    width: 69px;
+    height: 22px;
+    background-image: url('../assets/images/special-back.png');
+    position: relative;
+    float: right;
+    border: none;
+}
+
+.special-mark p {
+    color: white;
+    padding: 2px 11px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.nonspecial-mark {
+    width: 69px;
+    height: 22px;
+    /* border: 1px solid black; */
+}
+
+.special {
+    border: 1px solid #e4dbbb;
+    width: 453px;
+    height: 79px;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.nonspesial {
+    clear: right;
+}
+
+.reviews {
+    height: 758px;
+    background-color: gray;
+    background-image: url("../assets/images/reviews.png");
+    box-sizing: border-box;
+}
+
+.reviews article {
+    border: none;
+    /* background-color: rgba(0, 0, 0, 0.67); */
+    background-image: url("../assets/images/reviews-backgroung.png");
+    width: 770px;
+    height: 557px;
+    position: relative;
+    top: 100px;
+    left: 415px;
+    display: inline-block; 
+    box-sizing: border-box;
+}
+
+.reviews article h3{
+    margin: 77px auto 16px auto;    
+}
+
+.reviews article p {
+    margin: 18px 75px 35px 75px;
+    font-family: "Gentium";
+    color: #dde0df;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 2.0;
+    height: 218px;
+    overflow: hidden;
+}
+
+.reviews article p + p{
+    font-family: "Lato";
+    font-size: 16px;
+    margin: 0;
+}
+.reservations {
+    height: 710px;
+    box-sizing: border-box;
+}
+
+.reservations article div {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    top: 101px;
+    left: 215px;
+    overflow: hidden;
+}
+
+.reservations div h3 {
+    color:#cc9900;
+    margin: -4px auto 14px auto;
+}
+
+.reservations article p {
+    margin: 26px auto 0px auto;
+    font-family: "Lato";
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    line-height: 1.6;
+    max-height: 78px;
+    overflow: hidden;
+    letter-spacing: 0.3px;
+}
+
+.reservations article p + p{
+    margin: 10px auto 39px auto;
+    letter-spacing: 0.4px;
+}
+
+.reservations__form {
+    display: inline-block;
+    width: 430px;
+    height: 507px;
+    margin-left: 70px;
+    /*: 1px solid black; */
+    position: relative;
+    top: 99px;
+    left: 146px;
+    overflow: hidden;
+}
+
+form {
+    display: inline-block;
+    font-family: "open-sans-bold";
+    font-size: 14px;
+    color: #cc9900;
+    margin-bottom: 22px;
+}
+
+.form-right {
+    float: right;
+}
+
+.form-left {
+    float: left;
+}
+
+input {
+    font-family: "open-sans-italic";
+    font-size: 16px;
+    color: #7c7c7c;
+    height: 33px;
+    width: 197px;
+    margin: 5px 0px 0px 0px;
+}
+
+.book-now {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    background-color: #cc9900;
+    border: none;
+    color: white;
+    font-family: "open-sans-light";
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 36px;
+    letter-spacing: 0.5px;
+}
+
+label {
+    margin-bottom: 2px;
+    display: block;
+}
+
